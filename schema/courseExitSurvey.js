@@ -2,28 +2,22 @@ const mongoose = require('mongoose');
 
 const courseExitSurvey = mongoose.Schema({
     CO1: {
-        type: String
+        type: Number
     },
     CO2: {
-        type: String
+        type: Number
     },
     CO3: {
-        type: String
+        type: Number
     },
     CO4: {
-        type: String
+        type: Number
     },
     CO5: {
-        type: String
+        type: Number
     },
     CO6: {
-        type: String
-    },
-    CO7: {
-        type: String
-    },
-    CO8: {
-        type: String
+        type: Number
     },
     appropriatenessOfAssessmentToolsUsed: {
         type: String
@@ -54,6 +48,9 @@ const courseExitSurvey = mongoose.Schema({
     },
     year: {
         type: String
+    },
+    fuzzyResult: {
+        type: Number
     }
 });
 
